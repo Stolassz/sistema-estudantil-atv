@@ -68,7 +68,7 @@ while (executando) {
             if (alunos.length != 0) {
                 // TODO:
                 // Percorrer o array utilizando FOR
-                for (i = 0; i < alunos.length; i++) {
+                for (let i = 0; i < alunos.length; i++) {
                     // Mostrar:
                     // Nome
                     // Idade
@@ -93,20 +93,30 @@ while (executando) {
 
             console.log("\n--- CONSULTAR ALUNO ---");
 
-            let nomeBusca = readline.question("Digite o nome: ");
+            let nomeBusca = readline.question("Digite o nome: ").toLowerCase;
 
             let alunoEncontrado = false;
 
             // TODO:
             // Percorrer o array procurando
             // pelo nome informado.
+            for (let i = 0; i <alunos.length; i++) {
+                // Se encontrar:
+                // - Mostrar os dados
+                if (alunos[i].nome.toLowerCase === nomeBusca) {
+                    console.log("==============================");
+                    console.log("Aluno: " + alunos[i].nome);
+                    console.log("Idade: " + alunos[i].idade);
+                    console.log("Nota: " + alunos[i].nota);
+                    
+                    // - Alterar alunoEncontrado para true
+                    alunoEncontrado = true;
 
-            // Se encontrar:
-            // - Mostrar os dados
-            // - Alterar alunoEncontrado para true
-            // - Utilizar BREAK
-
-
+                    // - Utilizar BREAK
+                    break;
+                    }           
+            }
+            
             if (!alunoEncontrado) {
                 console.log("Aluno nao encontrado.");
             }
