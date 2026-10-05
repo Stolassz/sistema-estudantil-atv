@@ -62,21 +62,29 @@ while (executando) {
         case "2":
 
             console.log("\n--- ALUNOS CADASTRADOS ---");
-
-            // TODO:
-            // Verificar se existem alunos cadastrados
             
             // TODO:
-            // Percorrer o array utilizando FOR
-
-            // Mostrar:
-            // Nome
-            // Idade
-            // Nota
-
+            // Verificar se existem alunos cadastrados
+            if (alunos.length != 0) {
+                // TODO:
+                // Percorrer o array utilizando FOR
+                for (i = 0; i < alunos.length; i++) {
+                    // Mostrar:
+                    // Nome
+                    // Idade
+                    // Nota
+                    console.log( 
+                        "Id: " + (i + 1) + "\n" +
+                        "Nome: " + alunos[i].nome + "\n" +
+                        "Idade: " + alunos[i].idade + "\n" +
+                        "Nota: " + alunos[i].nota + "\n"
+                    );
+                }
+            } else {
+                console.log("Nenhum aluno cadastrado.")
+            }
 
             break;
-
 
         // --------------------------------
         // CONSULTAR
