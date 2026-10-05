@@ -54,10 +54,7 @@ while (executando) {
                 console.log("A nota digitada é inválida. Favor digitar de 0 a 10");
             }
 
-
-
             break;
-
 
         // --------------------------------
         // LISTAR
@@ -68,7 +65,7 @@ while (executando) {
 
             // TODO:
             // Verificar se existem alunos cadastrados
-
+            
             // TODO:
             // Percorrer o array utilizando FOR
 
