@@ -100,7 +100,7 @@ while (executando) {
             // TODO:
             // Percorrer o array procurando
             // pelo nome informado.
-            for (let i = 0; i <alunos.length; i++) {
+            for (let i = 0; i < alunos.length; i++) {
                 // Se encontrar:
                 // - Mostrar os dados
                 if (alunos[i].nome.toLowerCase === nomeBusca) {
@@ -133,19 +133,29 @@ while (executando) {
 
             // TODO:
             // Percorrer todos os alunos
-
-            // Se nota >= 7
-            //    Aprovado
-            //
-            // Senão se nota >= 5
-            //    Recuperacao
-            //
-            // Senão
-            //    Reprovado
-
+            for (let i = 0; i < alunos.length; i++) {
+                // Se nota >= 7
+                //    Aprovado
+                if (alunos[i].nota >= 7) {
+                    console.log(
+                        "Aluno: " + alunos[i].nome + "\n" +
+                        "Situação: Aprovado") + "\n";
+                    // Senão se nota >= 5
+                    //    Recuperacao
+                } else if (alunos[i].nota >= 5 && alunos[i].nota < 7) {
+                    console.log(
+                        "Aluno: " + alunos[i].nome + "\n" +
+                        "Situação: Recuperação") + "\n";
+                    // Senão
+                    //    Reprovado
+                } else {
+                    console.log(
+                        "Aluno: " + alunos[i].nome + "\n" +
+                        "Situação: Reprovado") + "\n";
+                }
+            }
 
             break;
-
 
         // --------------------------------
         // SAIR
