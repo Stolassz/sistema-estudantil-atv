@@ -1,0 +1,24 @@
+{
+  "name": "sistema-estudantil-atv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stolassz/sistema-estudantil-atv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Stolassz/sistema-estudantil-atv/issues"
+  },
+  "homepage": "https://github.com/Stolassz/sistema-estudantil-atv#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
